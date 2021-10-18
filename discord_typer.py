@@ -32,8 +32,12 @@ if __name__ == "__main__":
     else:
         os.system('clear')
 
-    token = 'YOUR_TOKEN'
-
+    token = input('token ~> ')
+    if checkToken(token):
+        print('valid token!')
+    else:
+        print('invalid token!')
+        exit(0)
     channel_id = ''
     o=input("""Options
 [1] Server Channel
